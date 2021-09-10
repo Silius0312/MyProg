@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, StyleSheet, Text, View, Alert } from 'react-native';
-
+import { NavigationContainer } from '@react-navigation/native';
 import {MyStack} from './navigation/navigation'
 import {Home} from './Screens/Home' 
 
@@ -8,8 +8,7 @@ import {Home} from './Screens/Home'
 export default function App() {
   return (   
     <View style={styles.container}>
-      <MyStack/>
-      <Home/>         
+           <NavigationContainer><Home/></NavigationContainer>         
     </View>
   );
 };
