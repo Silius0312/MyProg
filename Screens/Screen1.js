@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, View } from "react-native";
+import { Button, View, Text } from "react-native";
 
 
 export const Screen1 = ({navigation}) => {
@@ -11,6 +11,11 @@ export const Screen1 = ({navigation}) => {
             navigation.navigate('Home') 
     } 
     /> 
+    <Text> А теперь всё заепца,{"\n"}
+        Счастье полная штанца,{"\n"}
+        Во какой я Молодец,{"\n"}
+        Скоро будет всем 3.14*дец...{"\n"}
+    </Text>
         </View>  
     );
 };
