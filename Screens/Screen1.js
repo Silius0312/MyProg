@@ -1,4 +1,5 @@
-import { Button, View, Text } from "react-native";
+import React from 'react';
+import { Button, View } from "react-native";
 
 
 export const Screen1 = ({navigation}) => {
