@@ -6,16 +6,30 @@ export const Screen1 = ({navigation}) => {
     return (
         <View>            
             <Button 
-            title =  "Back"
+            title =  "Главная"
             onPress={() => 
             navigation.navigate('Home') 
     } 
     /> 
-    <Text> А теперь всё заепца,{"\n"}
-        Счастье полная штанца,{"\n"}
-        Во какой я Молодец,{"\n"}
-        Скоро будет всем 3.14*дец...{"\n"}
-    </Text>
+            <Button 
+                title =  "Страница 1"
+                onPress={() => 
+                navigation.navigate('Screen1') 
+             } 
+        />
+            <Button 
+            title = "Страница 2" 
+            onPress ={() =>
+            navigation.navigate('Screen2')
+            }
+            /> 
+            <Button 
+            title = "Страница 3" 
+            onPress ={() =>
+            navigation.navigate('HScreen3')
+            }
+            /> 
+    <Text>1 страница</Text>
         </View>  
     );
 };

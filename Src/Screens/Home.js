@@ -6,17 +6,31 @@ export const Home = (props) => {
     const navigation = props.navigation;
     return (                   
         <View>
+              <Button 
+            title =  "Главная"
+            onPress={() => 
+            navigation.navigate('Home') 
+    } 
+    /> 
             <Button 
-                title =  "Next"
+                title =  "Страница 1"
                 onPress={() => 
                 navigation.navigate('Screen1') 
              } 
         />
-        <Text> Как же долго я ебался,{"\n"}
-            Наконец-то докапался,{"\n"}
-            Я ошибки всё искал,{"\n"}
-            Влад мне в этом помогал.
-        </Text>
+         <Button 
+                title =  "Страница 2"
+                onPress={() => 
+                navigation.navigate('Screen2') 
+             } 
+        />
+         <Button 
+                title =  "Страница 3"
+                onPress={() => 
+                navigation.navigate('Screen3') 
+             } 
+        />
+        <Text>Главная Страница</Text>
         </View>     
     );
 };
