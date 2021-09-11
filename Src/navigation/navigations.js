@@ -28,13 +28,13 @@ export const Navigate = () => {
         <Stack.Screen 
             name="Screen2" 
             component={Screen2}
-            options={{ title: 'Welcome Screen 2' }} 
+            options={{ title: 'Welcome Screen2' }} 
         />
 
         <Stack.Screen 
             name="Screen3" 
             component={Screen3}
-            options={{ title: 'Welcome Screen 3' }} 
+            options={{ title: 'Welcome Screen3' }} 
         />
         
       </Stack.Navigator>
