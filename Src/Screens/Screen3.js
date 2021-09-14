@@ -4,25 +4,33 @@ import { View, Text, Button, StyleSheet } from 'react-native';
 export const Screen3 = () => {
   const [calcsTap, setCalcsTap] =  useState(0);
 
+  // При нажатии добавляем 1 (+1)
   const onePlus = () => {
-    setCalcsTap(calcsTap + 1)  
+    setCalcsTap(calcsTap + 1) 
   };
 
+// При нажатии убавляем 1  (-1)
   const oneMinus = () => {
     setCalcsTap(calcsTap - 1) 
 };
+
         return (            
             <View>            
-                <Text style= {styles.red}>3 страница</Text>
-                    <Button
+                <Text>3 страница</Text>
+                   <Button
                         title = "Добавить"                                                          
                         onPress={onePlus}                        
-                    />
-                   <Button
+                    />                    
+                    <Button
                         title = "Убрать"                                                          
                         onPress={oneMinus}
                    />    
-                    <Text>Вы нажали: {calcsTap}</Text>                        
+                    <Text style={
+                        onePlus 
+                        ? styles.red
+                        : styles.green}>
+                        Вы нажали: {calcsTap}
+                    </Text>                        
             </View>
     )
 };
