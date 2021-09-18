@@ -3,6 +3,8 @@ import { Home } from '../Screens/Home';
 import { Screen1 } from '../Screens/Screen1';
 import { Screen2 } from '../Screens/Screen2';
 import { Screen3 } from '../Screens/Screen3';
+import { Screen4 } from '../Screens/Screen4';
+import { Screen5 } from '../Screens/Screen5';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -36,7 +38,16 @@ export const Navigate = () => {
             component={Screen3}
             options={{ title: 'Welcome Screen3' }} 
         />
-        
+        <Stack.Screen
+            name="Screen4"
+            component={Screen4}
+            options={{ title: 'Welcome Screen4' }}
+        />
+        <Stack.Screen
+            name="Screen5"
+            component={Screen5}
+            options={{ title: 'Welcome Screen5' }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

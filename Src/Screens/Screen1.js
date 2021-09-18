@@ -8,8 +8,7 @@ export const Screen1 = () => {
       setNumber(text);
     };
 
-  const result = number 
-    return (
+      return (
       <SafeAreaView>
         <TextInput 
             style={styles.input}

@@ -6,6 +6,7 @@ export const Home = (props) => {
     const navigation = props.navigation;
     return (                   
         <View>
+            <Text>Главная Страница</Text>
               <Button 
             title =  "Главная"
             onPress={() => 
@@ -30,7 +31,18 @@ export const Home = (props) => {
                 navigation.navigate('Screen3') 
              } 
         />
-        <Text>Главная Страница</Text>
+        <Button 
+                title =  "Страница 4"
+                onPress={() => 
+                navigation.navigate('Screen4') 
+             } 
+        />
+        <Button 
+                title =  "Страница 5"
+                onPress={() => 
+                navigation.navigate('Screen5') 
+             } 
+        />        
         </View>     
     );
 };
