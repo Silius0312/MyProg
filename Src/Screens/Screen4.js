@@ -6,30 +6,23 @@ import {
 } from "react-native";
 
 
-export const Screen4 = () => {
-    const productList = () => {
-        return [
-          {
-            id: 1,
-            title: "FirstProduct",
-            description: "Example",
-            photo: 1,
-            price: 1,
-            date: 1,
-            favorite: 1,
-          },
-        ],
+export const Screen4 = (navigation) => {
+    return (
         <View>     
-            <Button 
-                title = 'Перенести на 5 страницу'
-                onPress ={() => 
-                navigation.navigate('Screen5', {firstElement: productList})}/>
+            <Button
+                title="Go to Screen5"
+                onPress={() => {
+                navigation.navigate('Screen5', {
+                itemId: 86,                
+          });
+        }}
+        />
          </View> 
          
+    );
         
-        const {firstElement} = route.params;
     
-}
+
 };
 
 
