@@ -6,21 +6,21 @@ import {
 } from "react-native";
 
 
-export const Screen4 = (navigation) => {
+export const Screen4 = ({navigation}) => {
+   
     return (
         <View>     
             <Button
                 title="Go to Screen5"
                 onPress={() => {
-                navigation.navigate('Screen5', {
-                itemId: 86,                
-          });
+                navigation.navigate('Screen5', {itemId: 86})
         }}
         />
          </View> 
          
     );
-        
+    
+    const { itemId } = route.params;
     
 
 };

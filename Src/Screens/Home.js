@@ -37,12 +37,12 @@ export const Home = (props) => {
                 navigation.navigate('Screen4') 
              } 
         />
-        <Button 
+        {/* <Button 
                 title =  "Страница 5"
                 onPress={() => 
                 navigation.navigate('Screen5') 
              } 
-        />        
+        />         */}
         </View>     
     );
 };
