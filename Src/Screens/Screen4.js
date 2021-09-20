@@ -1,39 +1,20 @@
 import React from "react";
-import {
-    Button,
-    View, 
-    StyleSheet, 
-} from "react-native";
+import { Button, View, StyleSheet, Text } from "react-native";
 
 
-export const Screen4 = ({navigation}) => {
-   
+export const Screen4 = ({navigation, route}) => { 
+    const txtFrom5 = route.params.text
+    const passFrom5 = route.params.number
     return (
         <View>     
             <Button
-                title="Go to Screen5"
+                title="Войти"
                 onPress={() => {
-                navigation.navigate('Screen5', {itemId: 86})
+                navigation.navigate('Screen5')
         }}
-        />
-         </View> 
-         
-    );
-    
-    const { itemId } = route.params;
-    
-
+        />                      
+                <Text>{txtFrom5}</Text>
+                <Text>{passFrom5}</Text>                 
+         </View>       
+    );   
 };
-
-
-
-
-const styles = StyleSheet.create({
-    input: {
-    height: 50,
-    margin: 20,
-    borderWidth: 2,
-    padding: 15,
-    color: 'red',   
-  },
-});
