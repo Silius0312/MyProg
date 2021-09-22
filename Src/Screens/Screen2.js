@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { Peredacha, Screen3 } from './Screen3';
+import { Peredacha } from './Screen3';
 
 export const Screen2 = (props) => {
     // проверяем введеный текст число это или нет

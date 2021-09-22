@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Text, SafeAreaView, StyleSheet, TextInput } from "react-native";
+import { Text, SafeAreaView, StyleSheet, TextInput } from "react-native";
 import { Screen2 } from './Screen2';
 
 export const Screen1 = () => {
