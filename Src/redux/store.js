@@ -6,7 +6,7 @@ import {first} from "./reducer/reducer"
 
 
 const allReducers = combineReducers ({
-    firstRS : first,
+    firstRS : firstR,
 
 });
 
