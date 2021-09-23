@@ -11,7 +11,7 @@ export const First = () => {
         data={First1}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
-          <Text style={styles.title}>{item.title}</Text>
+        <Text style={styles.title}>{item.title}</Text>
         )}
       />
     </SafeAreaView>
@@ -21,5 +21,6 @@ export const First = () => {
 const styles = StyleSheet.create({
   title: {
     fontSize: 20,
+    color: "red"
   },
 });
