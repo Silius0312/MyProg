@@ -15,6 +15,11 @@ export const Navigate = () => {
             component={Home}
             options={{ title: 'Welcome Home' }}
         />
+        <Stack.Screen
+            name="WorkOut"
+            component={Home}
+            options={{ title: 'Welcome Home' }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
