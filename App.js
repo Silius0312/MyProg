@@ -3,6 +3,7 @@ import {Provider} from "react-redux"
 import { store } from './Src/redux/store';
  
 import { Navigate } from './Src/navigation/navigations';
+import { StyleSheet } from 'react-native';
 
 
 const App = () => {
@@ -15,3 +16,12 @@ const App = () => {
 };
 
 export default App;
+
+
+// const style = StyleSheet.create ({
+//   page: {
+
+//   }
+
+// })
+

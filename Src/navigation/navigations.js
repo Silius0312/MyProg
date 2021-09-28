@@ -1,5 +1,6 @@
 import React from 'react';
-import { Home } from '../Screens/Home';
+import { First } from '../components/first';
+import { Workout } from '../components/Workout';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -11,9 +12,14 @@ export const Navigate = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-            name="Home"
-            component={Home}
-            options={{ title: 'Welcome Home' }}
+            name="First"
+            component={First}
+            options={{ title: 'Welcome First' }}
+        />
+        <Stack.Screen
+            name="Workout"
+            component={Workout}
+            options={{ title: 'Welcome Workout' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

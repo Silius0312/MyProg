@@ -1,13 +1,16 @@
 import React from 'react';
-import { View, Text } from "react-native";
+import { SafeAreaView, Text } from "react-native";
 import {First} from "../components/first"
+import { Workout } from '../components/Workout';
 
 
-export const Home = (props) => {
-    const navigation = props.navigation;
-    return (                   
-        <View>
+export const Home = () => {
+        return (                   
+        <SafeAreaView>
             <First />
-             </View>     
+            <Workout/>
+             </SafeAreaView>     
     );
 };
+
+
