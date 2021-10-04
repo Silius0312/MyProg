@@ -1,14 +1,15 @@
 import { createStore } from "redux";
 import { combineReducers } from "redux";
 
-import {FirstR} from "../redux/reducer/reducer";
-import { Exercicies } from "../redux/reducer/reducerWorkout";
-
+import {FirstR} from "../redux/reducer/InfoList/firstlist";
+import { WorkList } from "../redux/reducer/InfoList/worklist";
+import { Progress } from "./reducer/InfoList/progresslist";
 
 
 const allReducers = combineReducers ({
     firstRS: FirstR,
-    exerciciesRS: Exercicies,
+    workRS: WorkList,
+    progressRS: Progress,
 });
 
 
