@@ -1,4 +1,4 @@
-export const Exercicies = () => {
+export const WorkList = () => {
     return [
          {
             id:1,

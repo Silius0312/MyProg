@@ -1,6 +1,6 @@
 import React from 'react';
 import { First } from '../components/first';
-import { Workout } from '../components/Workout';
+import { Workout } from '../Screens/Workout';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -12,14 +12,14 @@ export const Navigate = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-            name="First"
+            name="Главная"
             component={First}
-            options={{ title: 'Welcome First' }}
+            options={{ title: 'Welcome на Главную' }}
         />
         <Stack.Screen
             name="Workout"
             component={Workout}
-            options={{ title: 'Welcome Workout' }}
+            options={{ title: 'Упражнения' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

@@ -2,18 +2,18 @@ import React from 'react'
 import { SafeAreaView, TouchableOpacity, StyleSheet, Text, FlatList } from 'react-native'
 import { useSelector } from "react-redux";
 
-export const Workout = () => {
-    const Workout1 = useSelector((state) => state.exerciciesRS);
+export const Work = () => {
+    const Work1 = useSelector((state) => state.workRS);
 
-    const ItemWorkout = ({item}) => (
+    const ItemWork = ({item}) => (
         <TouchableOpacity>
             <Text> { item.title } </Text>
         </TouchableOpacity>
     );
 
-    const ItemListWorkout = ({item}) =>{
+    const ItemListWork = ({item}) =>{
         return (
-            <ItemWorkout item={item} />
+            <ItemWork item={item} />
         )
     };
 
@@ -22,9 +22,9 @@ export const Workout = () => {
     return (
         <SafeAreaView>
             <FlatList
-                data={Workout1}
+                data={Work1}
                 keyExtractor={(item) => item.id.toString()}
-                renderItem={ ItemListWorkout }                 
+                renderItem={ ItemListWork }                 
       />      
         </SafeAreaView>
     )
