@@ -1,15 +1,13 @@
 import React from 'react';
 import { SafeAreaView, Text } from "react-native";
-import {First} from "../components/first"
+import { GymComp } from '../../components/uprajnenie/Gymcomp';
 
 
 
-export const Home = () => {
+export const Gym = () => {
         return (                   
         <SafeAreaView>
-            <First />                      
+            <GymComp/>                           
         </SafeAreaView>     
     );
 };
-
-

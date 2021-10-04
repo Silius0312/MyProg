@@ -1,15 +1,13 @@
 import React from 'react';
 import { SafeAreaView, Text } from "react-native";
-import {First} from "../components/first"
 
 
 
-export const Home = () => {
+
+export const Plechi = () => {
         return (                   
         <SafeAreaView>
-            <First />                      
+            <Text>Плечи</Text>                  
         </SafeAreaView>     
     );
 };
-
-

@@ -1,15 +1,13 @@
 import React from 'react';
 import { SafeAreaView, Text } from "react-native";
-import {First} from "../components/first"
 
 
 
-export const Home = () => {
+
+export const Nogi = () => {
         return (                   
         <SafeAreaView>
-            <First />                      
+           <Text><NogiComp/></Text>                  
         </SafeAreaView>     
     );
 };
-
-

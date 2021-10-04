@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 
 export const First = ({navigation}) => {
   const First1 = useSelector((state) => state.firstRS); // импортируем в First1 состояние из Storejs (firstRS: FirstR,)
-  const onPress =()=> navigation.navigate('Workout');
+  const onPress =()=> navigation.navigate('Workout' );
 
   const ItemFirst1 = ({item}) => ( // ItemFirst1 принимает параметры item из reducer
     <TouchableOpacity onPress={onPress}>             

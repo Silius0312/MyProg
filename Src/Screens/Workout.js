@@ -6,10 +6,9 @@ import { Work } from '../components/Work';
 
 export const Workout = () => {
         return (                   
-        <SafeAreaView>
-           
+        <SafeAreaView>           
             <Work/>
-             </SafeAreaView>     
+        </SafeAreaView>     
     );
 };
 
