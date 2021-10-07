@@ -1,5 +1,4 @@
-export const WorkList = () => {
-    return [
+export const WorkList = [
          {
             id:1,
             title:'Жим лёжа'
@@ -21,5 +20,4 @@ export const WorkList = () => {
             title: 'Пресс'
         },
 
-        ]
-};
+        ];

@@ -4,10 +4,10 @@ import { SafeAreaView, Text } from "react-native";
 
 
 
-export const PressComp = ({navigation}) => {
+export const Shoulders = () => {
         return (                   
         <SafeAreaView>
-           <Text>Пресс</Text>                
+            <Text>Плечи</Text>                  
         </SafeAreaView>     
     );
 };

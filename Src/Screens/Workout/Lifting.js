@@ -4,10 +4,10 @@ import { SafeAreaView, Text } from "react-native";
 
 
 
-export const PlechiComp = ({navigation}) => {
+export const Lifting = () => {
         return (                   
         <SafeAreaView>
-            <Text>Плечи</Text>                  
+           <Text>Турник</Text>                      
         </SafeAreaView>     
     );
 };

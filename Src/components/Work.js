@@ -3,12 +3,11 @@ import { SafeAreaView, TouchableOpacity, StyleSheet, Text, FlatList } from 'reac
 import { useSelector } from "react-redux";
 
 export const Work = ({navigation}) => {
-    const onPress1 =()=> navigation.navigate("Gym");
-    const Work1 = useSelector((state) => state.workRS);    
+    //const onPress1 =()=> navigation.navigate("Gym");
+    const Work1 = useSelector((state) => state.workRS);   
     
-
     const ItemWork = ({item}) => (
-        <TouchableOpacity onPress = {onPress1}>
+        <TouchableOpacity /*onPress = {onPress1}*/>
             <Text> { item.title } </Text>
         </TouchableOpacity>
     );

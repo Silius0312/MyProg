@@ -4,10 +4,10 @@ import { SafeAreaView, Text } from "react-native";
 
 
 
-export const Nogi = () => {
+export const Squats = () => {
         return (                   
         <SafeAreaView>
-           <Text><NogiComp/></Text>                  
+           <Text>321</Text>                  
         </SafeAreaView>     
     );
 };

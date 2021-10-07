@@ -1,11 +1,11 @@
 import React from 'react';
 import { First } from '../components/first';
 import { Workout } from '../Screens/Workout';
-import { Gym } from '../Screens/Workout/Gym';
-import { Turnik } from '../Screens/Workout/Turnik';
-import { Nogi } from '../Screens/Workout/Nogi';
-import { Plechi } from '../Screens/Workout/Plechi';
-import { Press } from '../Screens/Workout/Press';
+// import { Bench } from '../Screens/Workout/Bench';
+// import { Lifting } from '../Screens/Workout/Lifting';
+// import { Squats } from '../Screens/Workout/Squats';
+// import { Shoulders } from '../Screens/Workout/Shoulders';
+// import { Press } from '../Screens/Workout/Press';
 
 
 import { NavigationContainer } from '@react-navigation/native';
@@ -27,31 +27,31 @@ export const Navigate = () => {
             component={Workout}
             options={{ title: 'Упражнения' }}
         />
-        <Stack.Screen
-            name="Gym"
-            component={Gym}
-            options={{ title: 'Gym' }}
+        {/* <Stack.Screen
+            name="Bench"
+            component={Bench}
+            options={{ title: 'Жим лёжа' }}
         />
         <Stack.Screen
-            name="Turnik"
-            component={Turnik}
+            name="Подтягивание"
+            component={Lifting}
             options={{ title: 'Turnik' }}
         />
         <Stack.Screen
-            name="Plechi"
-            component={Plechi}
-            options={{ title: 'Plechi' }}
+            name="Плечи"
+            component={Shoulders}
+            options={{ title: 'Плечи' }}
         />
         <Stack.Screen
-            name="Nogi"
-            component={Nogi}
+            name="Приседание"
+            component={Squats}
             options={{ title: 'Nogi' }}
         />
         <Stack.Screen
-            name="Press"
+            name="Пресс"
             component={Press}
             options={{ title: 'Press' }}
-        />
+        /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );
