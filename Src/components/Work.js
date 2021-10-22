@@ -1,14 +1,20 @@
 import React from 'react'
-import { SafeAreaView, TouchableOpacity, StyleSheet, Text, FlatList } from 'react-native'
+import { SafeAreaView, TouchableOpacity, StyleSheet, Text, FlatList, Button } from 'react-native'
 import { useSelector } from "react-redux";
 
-export const Work = ({navigation}) => {
-    //const onPress1 =()=> navigation.navigate("Gym");
+export const Works = (navigation) => {
+    
     const Work1 = useSelector((state) => state.workRS);   
     
+   
+
     const ItemWork = ({item}) => (
-        <TouchableOpacity /*onPress = {onPress1}*/>
+        <TouchableOpacity>
             <Text> { item.title } </Text>
+            <Button
+                title=" К упражнению "
+                onPress={() => navigation.navigate("Journal")}
+      />
         </TouchableOpacity>
     );
 
