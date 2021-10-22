@@ -1,13 +1,15 @@
 import React from 'react';
 import { SafeAreaView, Text } from "react-native";
+//import {First} from "../components/first"
 
 
 
-
-export const Squats = () => {
+export const Journal = () => {
         return (                   
         <SafeAreaView>
-           <Text>321</Text>                  
+         <Text>
+             sdf
+             </Text>                    
         </SafeAreaView>     
     );
 };

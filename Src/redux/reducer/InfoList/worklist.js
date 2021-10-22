@@ -20,4 +20,5 @@ export const WorkList = [
             title: 'Пресс'
         },
 
-        ];
+        ]
+    

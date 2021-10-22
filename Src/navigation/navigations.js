@@ -1,11 +1,13 @@
 import React from 'react';
 import { First } from '../components/first';
 import { Workout } from '../Screens/Workout';
-// import { Bench } from '../Screens/Workout/Bench';
-// import { Lifting } from '../Screens/Workout/Lifting';
-// import { Squats } from '../Screens/Workout/Squats';
-// import { Shoulders } from '../Screens/Workout/Shoulders';
-// import { Press } from '../Screens/Workout/Press';
+import { Journal } from '../Screens/Journal';
+// import { Bench } from '../Screens/WorkoutList/Bench';
+// import { Lifting } from '../Screens/WorkoutList/Lifting';
+// import { Squats } from '../Screens/WorkoutList/Squats';
+// import { Shoulders } from '../Screens/WorkoutList/Shoulders';
+// import { Press } from '../Screens/WorkoutList/Press';
+
 
 
 import { NavigationContainer } from '@react-navigation/native';
@@ -27,12 +29,12 @@ export const Navigate = () => {
             component={Workout}
             options={{ title: 'Упражнения' }}
         />
-        {/* <Stack.Screen
-            name="Bench"
-            component={Bench}
-            options={{ title: 'Жим лёжа' }}
-        />
         <Stack.Screen
+            name="Journal"
+            component={Journal}
+            options={{ title: 'Дневник' }}
+        />
+        {/* <Stack.Screen
             name="Подтягивание"
             component={Lifting}
             options={{ title: 'Turnik' }}

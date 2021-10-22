@@ -2,10 +2,7 @@ import { WorkList } from "./InfoList/worklist";
 
                                                             // initialState
 
-const initialState = {
-    Work: WorkList,
-};
-
+const initialState = WorkList;
                                                              //action
 
 const ACTION_ADD_NEW_WORKOUT = "ACTION_ADD_NEW_WORKOUT";

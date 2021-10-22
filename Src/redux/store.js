@@ -1,8 +1,8 @@
 import { createStore } from "redux";
 import { combineReducers } from "redux";
 
-import {FirstR} from "../redux/reducer/InfoList/firstlist";
-import { WorkList } from "../redux/reducer/InfoList/worklist";
+import {FirstR} from "../redux/reducer/InfoList/firstlist";                         // bvghjnhbetv компонент со списком для первой страницы
+import { workoutReducer } from "./reducer/reducer";                                // принимаем список упражнений с редюсера
 
 
 
@@ -10,8 +10,12 @@ import { WorkList } from "../redux/reducer/InfoList/worklist";
 
 const allReducers = combineReducers ({
     firstRS: FirstR,
-    WorkRS: WorkList,
+    workRS: workoutReducer
+   
 });
 
 
-export const store  = createStore(allReducers);
+export const store  = createStore(
+    allReducers,
+    window.REDUX_DEVTOOLS_EXTENSION && window.REDUX_DEVTOOLS_EXTENSION()                // запуск дебаггера
+);

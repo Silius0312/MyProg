@@ -1,13 +1,13 @@
 import React from 'react';
 import { SafeAreaView, Text } from "react-native";
-import { BenchComp } from '../../components/workout/Benchcomp';
 
 
 
-export const Bench = () => {
+
+export const Squats = () => {
         return (                   
         <SafeAreaView>
-               <BenchComp/>                    
+           <Text>Ноги</Text>                  
         </SafeAreaView>     
     );
 };
