@@ -9,13 +9,13 @@ const ACTION_ADD_NEW_WORKOUT = "ACTION_ADD_NEW_WORKOUT";
 const ACTION_DELETE_WORKOUT = "ACTION_DELETE_WORKOUT";
 
 
-const addNewWorkout = () => ({
+export const addNewWorkout = (newWork) => ({
     type: ACTION_ADD_NEW_WORKOUT,
-    payload: {},
+    payload: newWork,
 });
-const deleteWorkout = () => ({
+const deleteWorkout = (newWork) => ({
     type: ACTION_DELETE_WORKOUT,
-    payload: {}
+    payload: newWork,
 
 });
 export const action = { addNewWorkout, deleteWorkout };
