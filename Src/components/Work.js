@@ -2,7 +2,7 @@ import React from 'react'
 import { SafeAreaView, TouchableOpacity, StyleSheet, Text, FlatList, Button } from 'react-native'
 import { useSelector } from "react-redux";
 
-export const Works = (navigation) => {
+export const Works = ({navigation}) => {
     
     const Work1 = useSelector((state) => state.workRS);   
     

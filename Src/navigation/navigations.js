@@ -19,11 +19,7 @@ export const Navigate = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen
-            name="Главная"
-            component={First}
-            options={{ title: 'Welcome на Главную' }}
-        />
+        
         <Stack.Screen
             name="Workout"
             component={Workout}
@@ -33,28 +29,8 @@ export const Navigate = () => {
             name="Journal"
             component={Journal}
             options={{ title: 'Дневник' }}
-        />
-        {/* <Stack.Screen
-            name="Подтягивание"
-            component={Lifting}
-            options={{ title: 'Turnik' }}
-        />
-        <Stack.Screen
-            name="Плечи"
-            component={Shoulders}
-            options={{ title: 'Плечи' }}
-        />
-        <Stack.Screen
-            name="Приседание"
-            component={Squats}
-            options={{ title: 'Nogi' }}
-        />
-        <Stack.Screen
-            name="Пресс"
-            component={Press}
-            options={{ title: 'Press' }}
-        /> */}
-      </Stack.Navigator>
+        />        
+        </Stack.Navigator>
     </NavigationContainer>
   );
 };
