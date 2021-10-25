@@ -11,10 +11,6 @@ export const Works = ({navigation}) => {
     const ItemWork = ({item}) => (
         <TouchableOpacity>
             <Text> { item.title } </Text>
-            <Button
-                title=" К упражнению "
-                onPress={() => navigation.navigate("Journal")}
-      />
         </TouchableOpacity>
     );
 
@@ -28,6 +24,9 @@ export const Works = ({navigation}) => {
     
     return (
         <SafeAreaView>
+            <Button
+                title=" Добавить упражнение "
+                onPress={() => navigation.navigate("AddWork")}/>
             <FlatList
                 data={Work1}
                 keyExtractor={(item) => item.id.toString()}

@@ -28,7 +28,7 @@ export const WorkList = [
             id:5,
             title: 'Пресс',
             approach: 5,
-            weight: 75
+            weight: 73
         },
 
         ]

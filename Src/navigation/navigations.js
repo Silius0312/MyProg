@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Workout } from '../Screens/Workout';
-import { Journal } from '../Screens/Journal';
+import { AddWork } from '../Screens/AddWork';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -18,9 +18,9 @@ export const Navigate = () => {
             options={{ title: 'Упражнения' }}
         />
         <Stack.Screen
-            name="Journal"
-            component={Journal}
-            options={{ title: 'Дневник' }}
+            name="AddWork"
+            component={AddWork}
+            options={{ title: 'Добавить упражнения' }}
         />        
         </Stack.Navigator>
     </NavigationContainer>
