@@ -1,4 +1,4 @@
-import { WorkList } from "./InfoList/worklist";
+import { WorkList } from "./InfoList/Worklist";
 
                                                             // initialState
 

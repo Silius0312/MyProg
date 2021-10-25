@@ -11,6 +11,7 @@ export  const Journals = () => {
           onChangeText={onChangeText}
           value={text}
           placeholder="Вес"
+          keyboardType="numeric"
         />
         <TextInput
           style={styles.input}
