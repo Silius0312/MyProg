@@ -17,7 +17,7 @@ export  const AddWorks = ({ navigation: { goBack }}) => {
 
         function getRandomInt(max) {
         return Math.floor(Math.random() * max);
-        }
+        };
         const newWork = {id: getRandomInt(999999999999), title: name, approach: amount, weight: weight};
         const dispath = useDispatch();
         return (
