@@ -8,17 +8,17 @@ export  const AddWork = ({ navigation: { goBack }}) => {                //при
         
                                                  // Создаём 3 переменнык которые принимают TextInput                       
         const [name, setName]= useState(null);                      
-        const [weight, setWeight] = useState(null);
-        const [amount, setAmount] = useState(null);
+        // const [weight, setWeight] = useState(null);
+        // const [amount, setAmount] = useState(null);
                                                                         // принимаем onChange (name, weight, amount (onChangename, onChangeweight , onChangeamount ))
         const onChangeName = (text) => {setName(text)};
-        const onChangeWeigt = (number) => {setWeight(number)};
-        const onChangeAmount = (number) => {setAmount(number)};
+        // const onChangeWeigt = (number) => {setWeight(number)};
+        // const onChangeAmount = (number) => {setAmount(number)};
                                                                         // принимаем рандомный Id для упражнений
         function getRandomInt(max) {
         return Math.floor(Math.random() * max);
         };
-        const newWork = {id: getRandomInt(999999999999), title: name, approach: amount, weight: weight};   // создаём новое упражнение с name, weight, amount и случ Id
+        const newWork = {id: getRandomInt(999999999999), title: name,} /* amount: amount, weight: weight};*/   // создаём новое упражнение с name, weight, amount и случ Id
         const dispath = useDispatch();
         return (
         <SafeAreaView>
@@ -28,20 +28,7 @@ export  const AddWork = ({ navigation: { goBack }}) => {                //при
           value={name}
           placeholder="Название упражнения"         
         />
-        <TextInput
-          style={styles.input}
-          onChangeText={onChangeWeigt}
-          value={weight}
-          placeholder="Вес"
-          keyboardType="numeric"
-        />
-          <TextInput
-          style={styles.input}
-          onChangeText={onChangeAmount}
-          value={amount}
-          placeholder="Количество"
-          keyboardType="numeric"
-        />
+      
         <Button 
         title = "Добавить упражнение"
         onPress = {() => {dispath(addNewWorkout(newWork)),                  // применяем dispath 
@@ -60,3 +47,19 @@ const styles = StyleSheet.create({
       padding: 10,
     }
   });
+
+
+//   <TextInput
+//   style={styles.input}
+//   onChangeText={onChangeWeigt}
+//   value={weight}
+//   placeholder="Вес"
+//   keyboardType="numeric"
+// />
+//   <TextInput
+//   style={styles.input}
+//   onChangeText={onChangeAmount}
+//   value={amount}
+//   placeholder="Количество"
+//   keyboardType="numeric"
+// />

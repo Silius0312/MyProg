@@ -7,18 +7,22 @@ const initialState = WorkList;
 
 const ACTION_ADD_NEW_WORKOUT = "ACTION_ADD_NEW_WORKOUT";
 const ACTION_DELETE_WORKOUT = "ACTION_DELETE_WORKOUT";
-
+const ACTION_ADD_WORKOUT_DETAILS = "ACTION_ADD_WORKOUT_DETAILS"
 
 export const addNewWorkout = (newWork) => ({
     type: ACTION_ADD_NEW_WORKOUT,
     payload: newWork,
 });
-const deleteWorkout = (newWork) => ({
+export const deleteWorkout = (WorkDelete) => ({
     type: ACTION_DELETE_WORKOUT,
-    payload: newWork,
-
+    payload: WorkDelete,
 });
-export const action = { addNewWorkout, deleteWorkout };
+export const addDetailsWorkout = (WorkDetails) => ({
+    type: ACTION_WORKOUT_DETAILS,
+    payload: WorkDetails
+})
+
+export const action = { addNewWorkout, deleteWorkout, addDetailsWorkout };
 
                                                               // reducer
   
@@ -28,8 +32,11 @@ export const workoutReducer = (state = initialState, action) => {
             return [...state, action.payload];
         case ACTION_DELETE_WORKOUT:
             return [...state, action.payload];
+        case ACTION_ADD_WORKOUT_DETAILS:
+            return [...state, action.payload];
 default:
     return state;
+    
         }
 };
 
