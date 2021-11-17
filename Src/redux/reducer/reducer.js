@@ -13,14 +13,14 @@ export const addNewWorkout = (newWork) => ({
     type: ACTION_ADD_NEW_WORKOUT,
     payload: newWork,
 });
-export const deleteWorkout = (WorkDelete) => ({
+export const deleteWorkout = (workDelete) => ({
     type: ACTION_DELETE_WORKOUT,
-    payload: WorkDelete,
+    payload: workDelete,
 });
-export const addDetailsWorkout = (WorkDetails) => ({
-    type: ACTION_WORKOUT_DETAILS,
-    payload: WorkDetails
-})
+export const addDetailsWorkout = (approaches) => ({
+    type: ACTION_ADD_WORKOUT_DETAILS,
+    payload: approaches,
+});
 
 export const action = { addNewWorkout, deleteWorkout, addDetailsWorkout };
 

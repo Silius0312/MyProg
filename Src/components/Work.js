@@ -2,15 +2,20 @@ import React from 'react'
 import { SafeAreaView, TouchableOpacity, StyleSheet, Text, FlatList, Button } from 'react-native'
 import { useSelector } from "react-redux";
 
-export const Works = ({navigation}) => {
+export const Works = ({navigation, route}) => {
     
-    const Work1 = useSelector((state) => state.workRS);   
-    
+    const Work1 = useSelector((state) => state.workRS);    
    
-
     const ItemWork = ({item}) => (
-        <TouchableOpacity>
+        <TouchableOpacity >            
             <Text> { item.title } </Text>
+            <Button
+        title="Go to Details"
+        onPress={() => {
+          /* 1. Navigate to the Details route with params */
+          navigation.navigate('addDetailsWork', {item});
+        }}
+      />
         </TouchableOpacity>
     );
 
@@ -19,8 +24,6 @@ export const Works = ({navigation}) => {
             <ItemWork item={item} />
         )
     };
-
-
     
     return (
         <SafeAreaView>
@@ -29,7 +32,7 @@ export const Works = ({navigation}) => {
                 onPress={() => navigation.navigate("AddWork")}/>
             <FlatList
                 data={Work1}
-                keyExtractor={(item) => item.id.toString()}
+                keyExtractor={(item) => item.id}  // или title ????? .toString()
                 renderItem={ ItemListWork }                 
       />      
         </SafeAreaView>
@@ -51,3 +54,8 @@ txt: {
 },
 
 })
+// onPress={() => {
+// navigation.navigate('Details', {
+//     itemId: 86,
+//     otherParam: 'anything you want here',
+//   });
